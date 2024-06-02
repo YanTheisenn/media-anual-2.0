@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icones/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icones/favicon-16x16.png">
+    <link rel="manifest" href="img/icones/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <title>Media Anual</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/YT.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Media Anual</a></li>
+                <li><a href="trimestral.html">Média trimestral</a></li>
+                <li><a href="dois-trimestres.html">Média 2 trimestres</a></li>
+            </ul>
+            <div class="menu-icon">
+                <img src="img/menu-icon.png" alt="Menu icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Quanto falta?</h1>
+            <label for="materia">Qual matéria?</label>
+            <select name="materia" id="materia" required>
+                <option value="arte">Arte</option>
+                <option value="ed-fisica">Educação Física</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="sociologia">Sociologia</option>
+                <option value="fisica">Física</option>
+                <option value="quimica">Química</option>
+                <option value="biologia">Biologia</option>
+                <option value="geografia">Geografia</option>
+                <option value="historia">História</option>
+                <option value="literatura">Literatura</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="espanhol">Espanhol</option>
+                <option value="ingles">Inglês</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <div class="media">
+                <label for="media-primeiro-trimestre">Média do primeiro trimestre:</label>
+                <input type="number" name="media-primeiro-trimestre" id="media-primeiro-trimestre" min="0" max="10">
+            </div>
+            <div class="media">
+                <label for="media-segundo-trimestre">Média do segundo trimestre:</label>
+                <input type="number" name="media-segundo-trimestre" id="media-segundo-trimestre" min="0" max="10">
+            </div>
+            <input id="botao" type="button" value="Calcular">
+
+            <h1 id="resposta"></h1>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/script3.js"></script>
+    <script src="js/topnav.js"></script>
+</body>
+
+</html>
